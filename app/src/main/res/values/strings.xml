@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">火箭隊助手</string>
+    <string name="accessibility_service_description">一個在Pokémon GO中自動打火箭隊手下並捕捉暗影寶可夢的外掛腳本。</string>
+</resources>
