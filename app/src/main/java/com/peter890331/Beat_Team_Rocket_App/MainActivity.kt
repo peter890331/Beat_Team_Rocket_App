@@ -80,7 +80,7 @@ class MainActivity : ComponentActivity() {
         val am = getSystemService(Context.ACCESSIBILITY_SERVICE) as AccessibilityManager
         val isServiceEnabled = am.getEnabledAccessibilityServiceList(AccessibilityServiceInfo.FEEDBACK_GENERIC).any { it.resolveInfo.serviceInfo.packageName == packageName }
         if (!isServiceEnabled) {
-            AlertDialog.Builder(this).setTitle("開啟無障礙服務權限").setMessage("火箭隊助手需要無障礙服務權限").setPositiveButton("前往開啟") { _, _ -> startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)) }.setCancelable(false).show()
+            startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
         }
     }
 
