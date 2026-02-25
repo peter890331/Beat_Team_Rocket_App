@@ -65,7 +65,7 @@ For users, you can directly download the final apk version in Releases and insta
       *Select the attributes of the Team Rocket grunts you want to challenge.*
       > Click the buttons below to select or unselect. You can choose specific types, or click "全選 (Select All)" to fight all available grunts.
 
-    - 啟動腳本 (Start Script)**：  
+    - 啟動腳本 (Start Script)：  
       確認完成後，直接點擊下方「啟動」！  
       *After confirming settings are complete, click below to start!*
 
@@ -76,29 +76,44 @@ For users, you can directly download the final apk version in Releases and insta
 
    The descriptions of the floating panel as follows:
 
-    - 主圖示 (Main Icon)**：  
+    - 主圖示 (Main Icon)：  
       長按可上下拖曳懸浮窗位置。  
       *Long press to drag the floating window up and down.*
 
-    - ▶ 啟動 (Play)**：  
+    - ▶ 啟動 (Play)：  
       確認遊戲載入完畢，並將視角拉至最小後，**必須點擊此按鈕才會正式開始自動化掛機流程**。  
       *Make sure the game is fully loaded and the perspective is minimized, then **you must click this button to officially start the botting process**.*
 
-    - ✖ 關閉 (Close)**：  
+    - ✖ 關閉 (Close)：  
       強制停止腳本運行並關閉懸浮窗。  
       *Force stop the script running and close the floating window.*
 
-    - 0 / 0 計數 (Counter)**：  
+    - 0 / 0 計數 (Counter)：  
       顯示當前進度（成功捕捉數量 / 總拜訪補給站數量）。  
       *Shows current progress (Successful catch count / Total visited PokéStops count).*
 
-    - 🔆 / 🌕 距離感應模式 (Proximity Sensor Mode)**：  
+    - 🔆 / 🌕 距離感應模式 (Proximity Sensor Mode)：  
       防誤觸省電開關。啟用後，只要遮擋手機上方的距離感測器（例如放入口袋或倒扣桌面），螢幕就會完全熄滅以達到省電與防誤觸的效果，同時腳本仍會在背景持續運行。移開遮擋物後，螢幕即會重新亮起。  
       *Anti-touch power-saving switch. When enabled, covering the phone's top proximity sensor (such as putting it in your pocket or placing it face down) will turn off the screen completely to save power and prevent accidental touches, while the script continues running in the background. Remove the cover, and the screen will light up again.*
 
-    - 📸 截圖 (Screenshot)**：  
+    - 📸 截圖 (Screenshot)：  
       手動截取當前畫面並儲存。點擊此按鈕會自動以 PNG 格式儲存到手機內的 `Pictures/PokemonGO` 資料夾中。  
       *Manually capture the current screen and save it. The image will be automatically saved as a PNG file in your phone's `Pictures/PokemonGO` folder.*
+
+4. Enjoy the convenience brought by this bot 🤓.
+
+---
+## Some examples when using
+### screen record
+
+## Notes
+【相容性聲明 / Compatibility Note】  
+這個 App 雖然有意要做成不同手機通用的版本，但無奈我沒有更多手機進行測試。因此，目前所有的影像辨識模板都是以我的手機螢幕為準。我不確定它是否能在不同解析度或比例的手機上正常運作。  
+*Although this app is intended to be universally compatible with different Android devices, I unfortunately don't have other phones to test it on. As a result, all current image recognition templates are calibrated exclusively to my own device's screen. I cannot guarantee that it will work properly on phones with different resolutions or aspect ratios.*
+
+以前的電腦版 (Previous PC Version)：  
+🔗 [Beat_Team_Rocket_cmd_version](https://github.com/peter890331/Beat_Team_Rocket_cmd_version)
+
 ---
 
 ### ❗ 警告：僅以此練習程式編寫，請勿在遊戲中使用外掛，否則後果自負！本人對此內容不負任何法律責任。 ❗
