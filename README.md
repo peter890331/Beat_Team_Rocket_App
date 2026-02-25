@@ -106,6 +106,8 @@ For users, you can directly download the final apk version in Releases and insta
 ## Some examples when using
 ### screen record
 
+---
+
 ## Notes
 【相容性聲明 / Compatibility Note】  
 
