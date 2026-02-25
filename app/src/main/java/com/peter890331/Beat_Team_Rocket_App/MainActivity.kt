@@ -353,7 +353,7 @@ class AutoClickService : AccessibilityService() {
                 while (!stopBattle && isBotRunning) {
                     if (findImageOnScreen("template/win.png", 0.75, lowerRoi)) { isWin = true; stopBattle = true; break }
                     val elapsedTime = System.currentTimeMillis() - startTime
-                    if (elapsedTime > 120000) { stopBattle = true; attackJob.cancel(); updateLog("強制返回"); repeat(10) { performGlobalAction(GLOBAL_ACTION_BACK); delay(1200) }; val roi = org.opencv.core.Rect(0, (dm.heightPixels * 2 / 3), dm.widthPixels, dm.heightPixels / 3); if (!findImageOnScreen("template/map.png", 0.90, roi)) { clickAt(PointF(540f, 2050f)); delay(2000); backToMap() }; break }
+                    if (elapsedTime > 180000) { stopBattle = true; attackJob.cancel(); updateLog("強制返回"); repeat(10) { performGlobalAction(GLOBAL_ACTION_BACK); delay(1200) }; val roi = org.opencv.core.Rect(0, (dm.heightPixels * 2 / 3), dm.widthPixels, dm.heightPixels / 3); if (!findImageOnScreen("template/map.png", 0.90, roi)) { clickAt(PointF(540f, 2050f)); delay(2000); backToMap() }; break }
                     delay(5000)
                 }
             }
@@ -364,7 +364,7 @@ class AutoClickService : AccessibilityService() {
 
     private suspend fun runCatchProcess() {
         updateLog("捕捉暗影寶可夢"); val dm = resources.displayMetrics; val lowerRoi = org.opencv.core.Rect(0, (dm.heightPixels * 2 / 3), dm.widthPixels, dm.heightPixels / 3)
-        while (isBotRunning) { if (findImageOnScreen("template/map.png", 0.90, lowerRoi)) break; dispatchGesture(GestureDescription.Builder().addStroke(GestureDescription.StrokeDescription(Path().apply { moveTo(540f / 1080f * dm.widthPixels, 2000f / 2158f * dm.heightPixels); lineTo(540f / 1080f * dm.widthPixels, 800f / 2158f * dm.heightPixels) }, 0, 100)).build(), null, null); delay(2500); if (!findImageOnScreen("template/win.png", 0.70, lowerRoi)) { delay(5000); if (findImageOnScreen("template/catched.png", 0.55)) { val okP = findImagePos("template/OK.png", 0.55, lowerRoi); clickAt(okP ?: PointF(540f, 1500f)); delay(3000); totalCatched++; for (i in 1..8) { if (findImageOnScreen("template/map.png", 0.90, lowerRoi)) break; performGlobalAction(GLOBAL_ACTION_BACK); delay(1000) }; break } } }
+        while (isBotRunning) { if (findImageOnScreen("template/map.png", 0.90, lowerRoi)) break; dispatchGesture(GestureDescription.Builder().addStroke(GestureDescription.StrokeDescription(Path().apply { moveTo(540f / 1080f * dm.widthPixels, 2000f / 2158f * dm.heightPixels); lineTo(540f / 1080f * dm.widthPixels, 800f / 2158f * dm.heightPixels) }, 0, 100)).build(), null, null); delay(2500); if (!findImageOnScreen("template/win.png", 0.70, lowerRoi)) { delay(3000); if (findImageOnScreen("template/catched.png", 0.55)) { val okP = findImagePos("template/OK.png", 0.55, lowerRoi); clickAt(okP ?: PointF(540f, 1500f)); delay(3000); totalCatched++; for (i in 1..8) { if (findImageOnScreen("template/map.png", 0.90, lowerRoi)) break; performGlobalAction(GLOBAL_ACTION_BACK); delay(1000) }; break } } }
     }
 
     private suspend fun runHealProcess() {
