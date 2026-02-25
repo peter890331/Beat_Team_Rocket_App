@@ -40,7 +40,8 @@ For users, you can directly download the final apk version in Releases and insta
 
     - 火箭隊助手 - Beat Team Rocket App, made by Peter Yu.
 
-    - 參數設定 (Parameter Settings)    
+    - 參數設定 (Parameter Settings)   
+      在開始執行腳本之前，請在此處設定你的參數。
       *Before start running the script, please set your parameters here.*
 
       The descriptions of settings as follows:
@@ -59,7 +60,7 @@ For users, you can directly download the final apk version in Releases and insta
           *After defeating how many grunts, open the bag to execute the revive and heal process. (Limit to an integer, default is 5)*
           > Type in the input box for "復活補血週期".
 
-    - 目標屬性 (Target Types)**：  
+    - 目標屬性 (Target Types)：  
       選擇你想要挑戰的火箭隊屬性。  
       *Select the attributes of the Team Rocket grunts you want to challenge.*
       > Click the buttons below to select or unselect. You can choose specific types, or click "全選 (Select All)" to fight all available grunts.
