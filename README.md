@@ -108,7 +108,9 @@ For users, you can directly download the final apk version in Releases and insta
 
 ## Notes
 【相容性聲明 / Compatibility Note】  
+
 這個 App 雖然有意要做成不同手機通用的版本，但無奈我沒有更多手機進行測試。因此，目前所有的影像辨識模板都是以我的手機螢幕為準。我不確定它是否能在不同解析度或比例的手機上正常運作。  
+
 *Although this app is intended to be universally compatible with different Android devices, I unfortunately don't have other phones to test it on. As a result, all current image recognition templates are calibrated exclusively to my own device's screen. I cannot guarantee that it will work properly on phones with different resolutions or aspect ratios.*
 
 以前的電腦版 (Previous PC Version)：  
