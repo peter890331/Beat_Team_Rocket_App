@@ -38,9 +38,10 @@ For users, you can directly download the final apk version in Releases and insta
    #### Home page
    First will be taken to the Home page, the descriptions in the main window as follows:
 
-    - 火箭隊助手 - Beat Team Rocket App, made by Peter Yu.**
+    - 火箭隊助手 - Beat Team Rocket App, made by Peter Yu.
 
-    - 參數設定 (Parameter Settings)** &nbsp;&nbsp;&nbsp;*Before start running the script, please set your parameters here.*
+    - 參數設定 (Parameter Settings)
+   &nbsp;&nbsp;&nbsp;*Before start running the script, please set your parameters here.*
 
       The descriptions of settings as follows:
         - 起始座標 (Start Coordinate)：  
