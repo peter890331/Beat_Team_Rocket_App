@@ -41,7 +41,7 @@ For users, you can directly download the final apk version in Releases and insta
     - 火箭隊助手 - Beat Team Rocket App, made by Peter Yu.
 
     - 參數設定 (Parameter Settings)   
-      在開始執行腳本之前，請在此處設定你的參數。
+      在開始執行腳本之前，請在此處設定你的參數。    
       *Before start running the script, please set your parameters here.*
 
       The descriptions of settings as follows:
