@@ -128,8 +128,6 @@ Before clicking the start button, please make sure you have prepared the followi
     - *Reminder: It is recommended to keep an eye on the screen while the script is running to handle any unexpected situations.*
     - 雷達：此腳本的座標來源是 PokeList，有時會出現查無座標的情況。
     - *Radar Source: The coordinate source for this script is PokeList; sometimes there may be situations where no coordinates are available.*
-    - 上限：注意 Pokémon GO 中有每日打火箭隊的上限，超過可能導致軟鎖。
-    - *Daily Limit: Note that there is a daily limit for battling Team GO Rocket. Exceeding it may result in a softban.*
 
 ---
 
