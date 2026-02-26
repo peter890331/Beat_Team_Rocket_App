@@ -29,6 +29,31 @@ Equipment and Software Requirements:
 
 ---
 
+#### 📋 啟動前檢查清單 (Preparation Check List)
+Before clicking the start button, please make sure you have prepared the following in the game:
+
+- **【GPS JoyStick 設定 / Settings】**
+    - 傳送：建議將操作桿預設為「隱藏」。
+    - *Teleport: It is recommended to set the joystick to "Hidden" by default.*
+- **【Pokémon GO 準備 / Preparation】**
+    - 孵蛋：建議暫停孵「蛋」。
+    - *Egg Hatching: It is recommended to pause egg hatching.*
+    - 大佬：建議解除裝備「火箭隊雷達」與「超級火箭隊雷達」。
+    - *Radars: It is recommended to unequip the "Rocket Radar" and "Super Rocket Radar".*
+    - 夥伴：建議攜帶達到「給力好夥伴」等級以上的寶可夢作為夥伴。
+    - *Buddy: It is recommended to have a buddy Pokémon at the "Great Buddy" level or higher (for Catch Assist).*
+    - 物資：確保背包備有足夠的「厲害傷藥」與「活力碎片」，可以事先刷路線獲得。
+    - *Supplies: Ensure your Item Bag has enough "Hyper Potions" and "Revives". You can farm Routes beforehand to get them.*
+    - 打手：確保在火箭隊對戰中皆已預先編排好各屬性對應的「小隊」。
+    - *Battle Parties: Ensure that you have pre-arranged corresponding battle "Parties" for each type in Team GO Rocket battles.*
+- **【注意事項 / Precautions】**
+    - 提醒：此腳本執行時建議全程在旁觀看，以便隨時應對突發狀況。
+    - *Reminder: It is recommended to keep an eye on the screen while the script is running to handle any unexpected situations.*
+    - 雷達：此腳本的座標來源是 PokeList，有時會出現查無座標的情況。
+    - *Radar Source: The coordinate source for this script is PokeList; sometimes there may be situations where no coordinates are available.*
+
+---
+
 ## How to use, For users
 For users, you can directly download the final apk version in Releases and install it on your Android phone.
 
@@ -103,31 +128,6 @@ For users, you can directly download the final apk version in Releases and insta
       *Manually capture the current screen and save it. The image will be automatically saved as a PNG file in your phone's Pictures/PokemonGO folder.*
 
 4. Enjoy the convenience brought by this bot 🤓.
-
----
-
-#### 📋 啟動前檢查清單 (Preparation Check List)
-Before clicking the start button, please make sure you have prepared the following in the game:
-
-- **【GPS JoyStick 設定 / Settings】**
-    - 傳送：建議將操作桿預設為「隱藏」。
-    - *Teleport: It is recommended to set the joystick to "Hidden" by default.*
-- **【Pokémon GO 準備 / Preparation】**
-    - 孵蛋：建議暫停孵「蛋」。
-    - *Egg Hatching: It is recommended to pause egg hatching.*
-    - 大佬：建議解除裝備「火箭隊雷達」與「超級火箭隊雷達」。
-    - *Radars: It is recommended to unequip the "Rocket Radar" and "Super Rocket Radar".*
-    - 夥伴：建議攜帶達到「給力好夥伴」等級以上的寶可夢作為夥伴。
-    - *Buddy: It is recommended to have a buddy Pokémon at the "Great Buddy" level or higher (for Catch Assist).*
-    - 物資：確保背包備有足夠的「厲害傷藥」與「活力碎片」，可以事先刷路線獲得。
-    - *Supplies: Ensure your Item Bag has enough "Hyper Potions" and "Revives". You can farm Routes beforehand to get them.*
-    - 打手：確保在火箭隊對戰中皆已預先編排好各屬性對應的「小隊」。
-    - *Battle Parties: Ensure that you have pre-arranged corresponding battle "Parties" for each type in Team GO Rocket battles.*
-- **【注意事項 / Precautions】**
-    - 提醒：此腳本執行時建議全程在旁觀看，以便隨時應對突發狀況。
-    - *Reminder: It is recommended to keep an eye on the screen while the script is running to handle any unexpected situations.*
-    - 雷達：此腳本的座標來源是 PokeList，有時會出現查無座標的情況。
-    - *Radar Source: The coordinate source for this script is PokeList; sometimes there may be situations where no coordinates are available.*
 
 ---
 
