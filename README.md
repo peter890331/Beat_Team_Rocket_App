@@ -30,7 +30,7 @@ Equipment and Software Requirements:
 ---
 
 #### 📋 啟動前檢查清單 (Preparation Check List)
-Before clicking the start button, please make sure you have prepared the following in the game:
+Before starting the script, please make sure you have prepared the following in your device:
 
 - **【GPS JoyStick 設定 / Settings】**
     - 傳送：建議將操作桿預設為「隱藏」。     
