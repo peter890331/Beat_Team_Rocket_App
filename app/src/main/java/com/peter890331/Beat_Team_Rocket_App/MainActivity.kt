@@ -432,12 +432,29 @@ class AutoClickService : AccessibilityService() {
     private fun findImagePos(name: String, threshold: Double, roiRect: org.opencv.core.Rect? = null): PointF? { val screen = getScreenshot() ?: return null; val template = try { BitmapFactory.decodeStream(assets.open(name)) } catch (e: Exception) { null } ?: return null; val fullMat = Mat(); val tMat = Mat(); val res = Mat(); try { Utils.bitmapToMat(screen, fullMat); Utils.bitmapToMat(template, tMat); val sMat = if (roiRect != null) { val x = max(0, roiRect.x); val y = max(0, roiRect.y); val w = min(fullMat.cols() - x, roiRect.width); val h = min(fullMat.rows() - y, roiRect.height); if (w > 0 && h > 0) Mat(fullMat, org.opencv.core.Rect(x, y, w, h)) else fullMat } else fullMat; Imgproc.matchTemplate(sMat, tMat, res, Imgproc.TM_CCOEFF_NORMED); val mm = Core.minMaxLoc(res); if (mm.maxVal >= threshold) { val offsetX = if (roiRect != null && sMat != fullMat) roiRect.x else 0; val offsetY = if (roiRect != null && sMat != fullMat) roiRect.y else 0; val finalX = mm.maxLoc.x.toFloat() + tMat.cols() / 2f + offsetX; val finalY = mm.maxLoc.y.toFloat() + tMat.rows() / 2f + offsetY; return PointF(finalX / screen.width * 1080f, finalY / screen.height * 2158f) } } finally { fullMat.release(); tMat.release(); res.release(); screen.recycle(); template.recycle() }; return null }
     private fun findImageOnScreen(name: String, threshold: Double, roiRect: org.opencv.core.Rect? = null) = findImagePos(name, threshold, roiRect) != null
     private fun shutdown() {
-        isBotRunning = false; btnAnimator?.cancel()
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) stopForeground(STOP_FOREGROUND_REMOVE) else stopForeground(true)
+        isBotRunning = false
+        btnAnimator?.cancel()
+
+        // 停止前台通知
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            stopForeground(STOP_FOREGROUND_REMOVE)
+        } else {
+            stopForeground(true)
+        }
+
+        // 移除懸浮視窗與提示
         if (customToastView != null) try { windowManager?.removeView(customToastView) } catch (e: Exception) {}
         if (sidePanel != null) try { windowManager?.removeView(sidePanel) } catch (e: Exception) {}
+
+        // 釋放省電模式的喚醒鎖
         if (proximityWakeLock?.isHeld == true) proximityWakeLock?.release()
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) disableSelf()
+
+        // 停止截圖服務
+        virtualDisplay?.release()
+        imageReader?.close()
+        projection?.stop()
+
+        // 注意：這裡【不要】寫 disableSelf()，也不要寫 killProcess()
     }
     private fun setupForegroundNotification() { val chan = NotificationChannel("BOT", "BTR", NotificationManager.IMPORTANCE_LOW); getSystemService(NotificationManager::class.java).createNotificationChannel(chan); startForeground(1, Notification.Builder(this, "BOT").setContentTitle("運行中").setSmallIcon(android.R.drawable.ic_menu_mylocation).build()) }
     private fun getJoyStickPackageName() = packageManager.queryIntentActivities(Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0")), 0).find { !it.activityInfo.packageName.contains("google") }?.activityInfo?.packageName ?: "com.theappninjas.fakegpsjoystick"
