@@ -133,6 +133,7 @@ For users, you can directly download the final apk version in Releases and insta
 
 ## Some examples when using
 ### screen record
+🔗 [Beat_Team_Rocket_App](https://youtu.be/8oKPpNkwhcQ)
 
 ---
 
