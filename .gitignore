@@ -12,8 +12,9 @@
 /captures
 .externalNativeBuild
 .cxx
-local.properties
 
-# Project exclude paths
+.idea/
+.kotlin/errors/
+
 /opencv/build/
 /opencv/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
